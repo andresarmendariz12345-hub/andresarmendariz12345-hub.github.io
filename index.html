@@ -35,7 +35,13 @@
         <!-- VIDEO 1 -->
         <h3>Video 1: Description of Part 1 </h3>
         <p>
-            This video explains the project and its components.
+            This video demonstrates the full FreeRTOS based healthcare
+            monitoring application running on the ESP32. It shows each 
+            task executing concurrently  the heartbeat LED blinking, 
+            the ventilator percentage updating the insulin delivery 
+            button responding, and the webserver interface toggling 
+            patient status. The output confirms that semaphores, mutexes,
+            and periodic tasks all function correctly as designed.
         </p>
 
         <div class="embed-responsive embed-responsive-16by9 mb-5">
@@ -47,14 +53,17 @@
         <!-- VIDEO 2 -->
         <h3>Video 2: Description of Part 2</h3>
         <p>
-            This video walks through the Logic analyzer source dump
-            in order to confirm that the system is a validated HARD
-            RTOS.
+            This video shows the VCD logic analyzer capture of the system’s
+            task timing behavior. The traces confirm that the hard real time tasks
+            (Heart beat simulator & insulin delivery and LED notification)
+            execute at fixed, predictable intervals. The periodic signals demonstrate
+            that deadlines are consistently met, verifying that the system behaves as
+            a true hard real-time operating system.
         </p>
 
         <div class="embed-responsive embed-responsive-16by9 mb-5">
             <iframe class="embed-responsive-item"
-                src="https://www.youtube.com/embed/W0cYlIB17k8
+                src="https://www.youtube.com/embed/W0cYlIB17k8"
                 allowfullscreen></iframe>
         </div>
 
